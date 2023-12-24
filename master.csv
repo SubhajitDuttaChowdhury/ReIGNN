@@ -1,0 +1,13 @@
+,stateFlipflopIdentify
+add_inverse_edge,True
+binary,False
+has_edge_attr,False
+has_node_attr,True
+is hetero,False
+num classes,2
+num tasks,1
+task type,binary classification
+download_name,stateFlipflopIdentify
+eval metric,acc
+additional edge files,None
+additional node files,None
