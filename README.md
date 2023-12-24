@@ -12,7 +12,7 @@ This repo contains the source code for **ReIGNN: State Register Identification U
 
 All the necessary files and folders should be present in the main folder. The names and function of these files are as follows:
 
-- dataset folder -- This folder contains the dataset which in our case is a collection of 50 designs. The files associated with the graphs are present in the raw subfolder in the dataset folder.
+- dataset folder -- This folder contains the dataset which in our case is a collection of 40 designs. The files associated with the graphs are present in the raw subfolder in the dataset folder.
 
 - There are in total 8 different designs. Each design is synthesized with 5 different operating frequencies to create different versions of it.
 
@@ -28,7 +28,7 @@ All the necessary files and folders should be present in the main folder. The na
 
 - test_model.py -- This script is used to load a trained model and perform inference.
 
-- result -- Once training/ inference it done, the output are stored in this folder. For each design, 2 files are created -- design_name_idlist.txt -- which contains the true positive, false positive, true negative, and false negative nodes before structural analysis, design_name_namelist.txt contains the TP, FP, TN, FN nodes after structural analysis.
+- result -- Once training/ inference is done, the output are stored in this folder. For each design, 2 files are created -- design_name_idlist.txt -- which contains the true positive, false positive, true negative, and false negative nodes before structural analysis, design_name_namelist.txt contains the TP, FP, TN, FN nodes after structural analysis.
 
 To perform training, we need to run the following command:
 
@@ -36,7 +36,7 @@ To perform training, we need to run the following command:
 
 If you want to create a trained model for aes2, please specify that in the keyword as aes2, and also specify the number of epochs, and the cuda that should be used. Once the training is done, the best performing model will be saved in this main folder (best_model_keyword) and the performance for each variant of the design will be stored in the result folder. 
 
-The 10 different keywords are: aes2, altor, gcm_aes, completogpio, fsm, siphash, cr_div, sha, uart, MEMORY
+The 8 different keywords are: aes2, altor, completogpio, fsm, siphash, cr_div, sha, MEMORY
 
 If you want to perform inference for an already trained model then we need to run the following command:
 
