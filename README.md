@@ -10,7 +10,7 @@ This repo contains the source code for **ReIGNN: State Register Identification U
 - Sklearn (https://scikit-learn.org/stable/install.html) 
 - numpy (https://numpy.org/install/)
 
-All the necessary files and folders should be present in the main folder. The names and function of these files are as follows:
+All necessary files and folders should be present in the main folder. The names and function of these files are as follows:
 
 - dataset folder -- This folder contains the dataset which in our case is a collection of 40 designs. The files associated with the graphs are present in the raw subfolder in the dataset folder.
 
